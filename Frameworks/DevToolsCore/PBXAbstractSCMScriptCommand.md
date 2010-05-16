@@ -7,7 +7,7 @@ parent: NSObject
 
 # PBXAbstractSCMScriptCommand Class Reference
 
-Framework /Developer/Library/PrivateFrameworks/DevToolsCore.framework
+*Framework* /Developer/Library/PrivateFrameworks/DevToolsCore.framework
 
 ## Overview
 
@@ -17,49 +17,56 @@ The PBXAbstractSCMScriptCommand class provides an interface for running source c
 
 ### Creating a PBXAbstractSCMScriptCommand Object
 
-####initWithCommandDescription:
+[- initWithCommandDescription:](#-initWithCommandDescription:)
 
 ### Obtaining Return Values Object
 
-####returnValueFromInfo:
-####returnScriptResultUsingInfo:
+[- returnValueFromInfo:](#-returnValueFromInfo:)
+
+[- returnScriptResultUsingInfo:](#-returnScriptResultUsingInfo:)
 
 ### Requests
 
-####requestDidFinish:
-####performRequestWithItems:onSCMManager:
-####runCommandOnItems:inProject:
-####runCommandOnProject:
-####argumentsForRequest
-####requestType
+[- requestDidFinish:](#-requestDidFinish:)
+
+[- performRequestWithItems:onSCMManager:](#-performRequestWithItems:onSCMManager:)
+
+[- runCommandOnItems:inProject:](#-runCommandOnItems:inProject:)
+
+[- runCommandOnProject:](#-runCommandOnProject:)
+
+[- argumentsForRequest](#-argumentsForRequest)
+
+[- requestType](#-requestType)
 
 ## Instance Methods
 
-### initWithCommandDescription:
-####(id)initWithCommandDescription:(id)arg1
+<a name="-initWithCommandDescription:"></a>
+###initWithCommandDescription:
+    - (id)initWithCommandDescription:(id)arg1
 
 ### returnValueFromInfo:
-####(id)returnValueFromInfo:(id)arg1
+    - (id)returnValueFromInfo:(id)arg1
 
 ### returnScriptResultUsingInfo:
-####(void)returnScriptResultUsingInfo:(id)arg1
+    - (void)returnScriptResultUsingInfo:(id)arg1
 
 ### requestDidFinish:
-####(void)requestDidFinish:(id)arg1
+    - (void)requestDidFinish:(id)arg1
 
 ### performRequestWithItems:onSCMManager
-####(id)performRequestWithItems:(id)arg1 onSCMManager:(id)arg2
+    - (id)performRequestWithItems:(id)arg1 onSCMManager:(id)arg2
 
 ### runCommandOnItems:inProject:
-####(id)runCommandOnItems:(id)arg1 inProject:(id)arg2
+    - (id)runCommandOnItems:(id)arg1 inProject:(id)arg2
 
 ### runCommandOnProject
-####(id)runCommandOnProject:(id)arg1
+    - (id)runCommandOnProject:(id)arg1
 
 ### argumentsForRequest
-####(id)argumentsForRequest
+    - (id)argumentsForRequest
 
 ### requestType
-####(id)requestType
+    - (id)requestType
 
 
