@@ -16,30 +16,62 @@ body {
   line-height: 16px;
 }
 
+a {
+    color: rgb(51, 102, 204);
+    text-decoration: none;
+}
+
 h1 {
-	font-size: 22px;
-	font-weight: bold;
-	padding-top: 20px;
-	padding-bottom: 10px;
-	@include text-shadow;
+    color: black;
+    font: normal normal normal 215%/normal 'Lucida Grande', Geneva, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    margin-bottom: 1.15em;
+    margin-top: 20px;
 }
+
 h2 {
-	font-size: 18px;
-	font-weight: bold;
-	padding-top: 10px;
-	padding-bottom: 6px;
+    border-bottom: 1px solid rgb(80, 136, 197);
+    color: rgb(60, 76, 108);
+    font-size: 187%;
+    font-weight: normal;
+    margin-top: 1.75em;
+    padding-bottom: 2px;
 }
+
 h3 {
-	font-size: 16px;
-	font-weight: bold;
-	padding-top: 10px;
-	padding-bottom: 6px;
+    margin-bottom: 0.25em;
+    margin-top: 0.471em;
+    color: black;
+    font-size: 145%;
+    font-weight: normal;
 }
-h4 {
-	font-size: 14px;
-	font-weight: bold;
-	padding-top: 10px;
-	padding-bottom: 6px;
+
+h4 { 
+    margin-top:2em;
+    margin-bottom:.5em;
+    font-size:125%;
+    font-weight:normal;
+    color:#000; 
+}
+
+h5 {
+    margin: 0.692em 0px 0.154em 0px;
+    color: black;
+    font-size: 100%;
+    padding: 0px;
+}
+
+em {
+    font-family: 'Lucida Grande', Geneva, Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+code {
+    font-family: monospace;
+    color: rgb(102, 102, 102);
+    font-family: Courier, Consolas, monospace;
+    font-size: 103%;
 }
 
 /* Layouting */
