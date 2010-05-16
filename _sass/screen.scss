@@ -1,0 +1,115 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+/* General Tags */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #FFF;
+  color: #000;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+h1 {
+	font-size: 22px;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	@include text-shadow;
+}
+h2 {
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 6px;
+}
+h3 {
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 6px;
+}
+h4 {
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 6px;
+}
+
+/* Layouting */
+header {
+	background: #EDF3FE;
+	@include linear-gradient(color-stops(#adbac6, #92a1b1, #7a8b9e));
+	border-bottom: 1px solid #ccc;
+	padding: 1em 2em 0.5em 2em;
+	h1 {
+		font-size: 18px;
+		margin: 5px 0;
+		padding: 0;
+		.type {
+			font-size: 17px;
+			display:block;
+		}
+		.type, .parent {
+			color: #666;
+		}
+	}
+	h2 {
+		font-size: 12px;
+		margin: 0;
+		padding: 0;
+	}
+	ul {
+		margin-top: 0.3em;
+		margin-bottom: 0;
+		font-size: 12px;
+		li {
+			list-style: none;
+			margin-left: 0;
+			margin-bottom: 0;
+		}
+	}
+}
+
+#wrapper {
+	background: #fff url('/images/bg.png') repeat-y;
+	min-height: 500px;
+}
+
+nav {
+	float:left;
+	width: 210px;
+	padding: 20px 10px;
+	overflow-x: hidden;
+	font-size: 12px;
+  line-height: 14px;
+}
+
+#content {
+	margin-left: 250px;
+	padding: 0 40px 40px 10px;
+}
+
+footer {
+	clear: both;
+	height: 30px;
+	background: #EDF3FE;
+	@include linear-gradient(color-stops(#485d77, #303c4f, #252d38));
+	p {
+		color: #CCC;
+		padding: 6px 0px;
+		text-align: center;
+	}
+}
+
+.clear
+{
+    clear: both;
+    width: 0; height: 0;
+}
