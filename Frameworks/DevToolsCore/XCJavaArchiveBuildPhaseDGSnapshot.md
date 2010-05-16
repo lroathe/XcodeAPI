@@ -1,4 +1,5 @@
----layout: default
+---
+layout: default
 title: XCJavaArchiveBuildPhaseDGSnapshot
 breadcrumbs: <a href="/index.html">Main</a> &raquo; <a href="/Frameworks.html">Framework</a> &raquo; <a href="/Frameworks/DevToolsCore.html">DevToolsCore</a> &raquo; XCJavaArchiveBuildPhaseDGSnapshot
 parent: XCBuildPhaseDGSnapshot 

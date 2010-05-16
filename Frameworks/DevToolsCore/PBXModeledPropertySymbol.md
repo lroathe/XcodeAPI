@@ -1,4 +1,5 @@
----layout: default
+---
+layout: default
 title: PBXModeledPropertySymbol
 breadcrumbs: <a href="/index.html">Main</a> &raquo; <a href="/Frameworks.html">Framework</a> &raquo; <a href="/Frameworks/DevToolsCore.html">DevToolsCore</a> &raquo; PBXModeledPropertySymbol
 parent: PBXMemberSymbol 

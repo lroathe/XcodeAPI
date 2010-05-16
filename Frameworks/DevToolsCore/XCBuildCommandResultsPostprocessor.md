@@ -1,4 +1,5 @@
----layout: default
+---
+layout: default
 title: XCBuildCommandResultsPostprocessor
 breadcrumbs: <a href="/index.html">Main</a> &raquo; <a href="/Frameworks.html">Framework</a> &raquo; <a href="/Frameworks/DevToolsCore.html">DevToolsCore</a> &raquo; XCBuildCommandResultsPostprocessor
 parent: NSObject 

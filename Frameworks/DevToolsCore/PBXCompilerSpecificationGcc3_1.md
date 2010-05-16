@@ -1,4 +1,5 @@
----layout: default
+---
+layout: default
 title: PBXCompilerSpecificationGcc3_1
 breadcrumbs: <a href="/index.html">Main</a> &raquo; <a href="/Frameworks.html">Framework</a> &raquo; <a href="/Frameworks/DevToolsCore.html">DevToolsCore</a> &raquo; PBXCompilerSpecificationGcc3_1
 parent: PBXCompilerSpecificationGcc2_95_2 
