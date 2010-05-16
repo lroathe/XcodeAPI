@@ -1,0 +1,25 @@
+---layout: default
+title: XCPropertyMacroBooleanExpression
+breadcrumbs: <a href="/index.html">Main</a> &raquo; <a href="/Frameworks.html">Framework</a> &raquo; <a href="/Frameworks/DevToolsCore.html">DevToolsCore</a> &raquo; XCPropertyMacroBooleanExpression
+parent: XCPropertyMacroExpression 
+---
+# XCPropertyMacroBooleanExpression Class Reference
+
+*Framework* /Developer/Library/PrivateFrameworks/DevToolsCore.framework
+
+## Overview
+
+Placeholder
+
+## Tasks
+
+## Instance Methods
+
+<a name="-evaluateInContext:"></a>
+###evaluateInContext:
+    - evaluateInContext:
+
+<a name="-evaluateAsBooleanInContext:"></a>
+###evaluateAsBooleanInContext:
+    - evaluateAsBooleanInContext:
+

@@ -1,0 +1,33 @@
+---layout: default
+title: XCGCCPreprocessingCommand
+breadcrumbs: <a href="/index.html">Main</a> &raquo; <a href="/Frameworks.html">Framework</a> &raquo; <a href="/Frameworks/DevToolsCore.html">DevToolsCore</a> &raquo; XCGCCPreprocessingCommand
+parent: XCDependencyShadowCommand 
+---
+# XCGCCPreprocessingCommand Class Reference
+
+*Framework* /Developer/Library/PrivateFrameworks/DevToolsCore.framework
+
+## Overview
+
+Placeholder
+
+## Tasks
+
+## Instance Methods
+
+<a name="-initWithOriginalCommand:outputFilePath:"></a>
+###initWithOriginalCommand:outputFilePath:
+    - initWithOriginalCommand:outputFilePath:
+
+<a name="-dealloc"></a>
+###dealloc
+    - dealloc
+
+<a name="-outputFilePath"></a>
+###outputFilePath
+    - outputFilePath
+
+<a name="-subprocessCommandLineForProcessing"></a>
+###subprocessCommandLineForProcessing
+    - subprocessCommandLineForProcessing
+

@@ -1,0 +1,21 @@
+---layout: default
+title: XCProjectRenameProductItem
+breadcrumbs: <a href="/index.html">Main</a> &raquo; <a href="/Frameworks.html">Framework</a> &raquo; <a href="/Frameworks/DevToolsCore.html">DevToolsCore</a> &raquo; XCProjectRenameProductItem
+parent: XCProjectRenameItem 
+---
+# XCProjectRenameProductItem Class Reference
+
+*Framework* /Developer/Library/PrivateFrameworks/DevToolsCore.framework
+
+## Overview
+
+Placeholder
+
+## Tasks
+
+## Instance Methods
+
+<a name="-rename"></a>
+###rename
+    - rename
+
