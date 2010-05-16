@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>This project builds an Xcode Plug-in.</string>
+	<key>FilesToMacroExpand</key>
+	<array>
+		<string>Info.plist</string>
+		<string>English.lproj/InfoPlist.strings</string>
+		<string>«PROJECTNAMEASIDENTIFIER»_Prefix.pch</string>
+		<string>«PROJECTNAMEASIDENTIFIER».h</string>
+		<string>«PROJECTNAMEASIDENTIFIER».m</string>
+		<string>«PROJECTNAMEASIDENTIFIER»Controller.h</string>
+		<string>«PROJECTNAMEASIDENTIFIER»Controller.m</string>
+		<string>MainMenu.xib</string>
+	</array>
+	<key>FilesToRename</key>
+	<dict>
+		<key>XCPlugin_Prefix.pch</key>
+		<string>«PROJECTNAME»_Prefix.pch</string>
+		<key>XCPlugin.h</key>
+		<string>«PROJECTNAMEASIDENTIFIER».h</string>
+		<key>XCPlugin.m</key>
+		<string>«PROJECTNAMEASIDENTIFIER».m</string>
+		<key>XCPluginController.h</key>
+		<string>«PROJECTNAMEASIDENTIFIER»Controller.h</string>
+		<key>XCPluginController.m</key>
+		<string>«PROJECTNAMEASIDENTIFIER»Controller.m</string>
+	</dict>
+</dict>
+</plist>
