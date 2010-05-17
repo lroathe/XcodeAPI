@@ -14,11 +14,15 @@ Placeholder
 
 ## Tasks
 
-## Class Methods
+### Loading Platforms
 
-<a name="+initialize"></a>
-###initialize
-    + initialize
+[+ loadAllPlatforms](#+loadAllPlatforms)
+
+[+ platformForName:](#+platformForName:)
+
+[+ platformForDomain:](#+platformForDomain:)
+
+## Class Methods
 
 <a name="+_propertyDictionaryForPlatformAtPath:"></a>
 ###_propertyDictionaryForPlatformAtPath:
@@ -42,23 +46,81 @@ Placeholder
 
 <a name="+loadAllPlatforms"></a>
 ###loadAllPlatforms
-    + loadAllPlatforms
+
+Load all platforms from all available paths.
+
+    + (void)loadAllPlatforms
+    
+####Discussion
+This method is fired to load any platforms stored in the appropriate paths (/Developer/Platforms). Calling this past the initial launch is acceptable, and correctly loads the platforms that may not have loaded during the initialization phases before the calling plugin has been loaded.
 
 <a name="+allPlatforms"></a>
 ###allPlatforms
-    + allPlatforms
+
+Fetches an array of all loaded platforms available.
+
+    + (NSArray *)allPlatforms
+
+####Return Value
+Array of XCPlatformSpecification objects.
 
 <a name="+platformForName:"></a>
 ###platformForName:
-    + platformForName:
+
+Obtain a platform by a name parameter.
+
+    + (XCPlatformSpecification *)platformForName:(NSString *)name
+
+####Parameters
+<p class="param">name</p>
+<p class="param-desc">The name corrisponding to a platform specification plist entry.</p>
+
+####Return Value
+A platform specification from the specified name.
+
+####See Also
+[+ platformForDomain:](#+platformForDomain:)
+
+[+ platformForPath:](#+platformForPath:)
 
 <a name="+platformForDomain:"></a>
 ###platformForDomain:
-    + platformForDomain:
+
+Obtain a platform by a domain parameter.
+
+    + (XCPlatformSpecification *)platformForDomain:(NSString *)domain
+
+####Parameters
+<p class="param">domain</p>
+<p class="param-desc">The name corrisponding to a platform domain specification plist entry.</p>
+
+####Return Value
+A platform specification from the specified domain.
+
+####See Also
+[+ platformForName:](#+platformForName:)
+
+[+ platformForPath:](#+platformForPath:)
+
 
 <a name="+platformForPath:"></a>
 ###platformForPath:
-    + platformForPath:
+
+Load a platform from a given path.
+
+    + (XCPlatformSpecification *)platformForPath:(NSString *)path
+
+####Parameters
+<p class="param">path</p>
+<p class="param-desc">The path to the specified platform bundle.</p>
+
+####Return Value
+A platform loaded from the given path.
+
+####See Also
+[+ platformForName:](#+platformForName:)
+
+[+ platformForDomain:](#+platformForDomain:)
 
 <a name="+platformForExpansionContext:"></a>
 ###platformForExpansionContext:
