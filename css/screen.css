@@ -68,33 +68,33 @@ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   background: #FFF;
   color: #000;
-  margin: 0px;
   font-size: 14px;
   line-height: 16px;
 }
 
-/* line 19, ../_sass/screen.scss */
+/* line 18, ../_sass/screen.scss */
 a {
   color: #3366cc;
   text-decoration: none;
 }
 
-/* line 24, ../_sass/screen.scss */
+/* line 23, ../_sass/screen.scss */
 h1 {
   color: black;
   font: normal normal normal 215%/normal "Lucida Grande", Geneva, Helvetica, Arial, sans-serif;
   font-weight: normal;
   margin-bottom: 1.15em;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
-/* line 32, ../_sass/screen.scss */
+/* line 31, ../_sass/screen.scss */
 h2 {
   border-bottom: 1px solid #5088c5;
   color: #3c4c6c;
   font-size: 187%;
   font-weight: normal;
   margin-top: 1.75em;
+  margin-bottom: 0.6em;
   padding-bottom: 2px;
 }
 
@@ -147,7 +147,7 @@ p {
 
 /* Layouting */
 /* line 83, ../_sass/screen.scss */
-header {
+.header {
   background: #EDF3FE;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #adbac6), color-stop(50%, #92a1b1), color-stop(100%, #7a8b9e));
   background-image: -moz-linear-gradient(top, #adbac6 0%, #92a1b1 50%, #7a8b9e 100%);
@@ -155,48 +155,49 @@ header {
   padding: 1em 2em 0.5em 2em;
 }
 /* line 88, ../_sass/screen.scss */
-header h1 {
+.header h1 {
+  text-shadow: #d5d5d5 0px 1px 0;
   font-size: 18px;
   margin: 5px 0;
   padding: 0;
 }
-/* line 92, ../_sass/screen.scss */
-header h1 .type {
+/* line 93, ../_sass/screen.scss */
+.header h1 .type {
   font-size: 17px;
   display: block;
 }
-/* line 96, ../_sass/screen.scss */
-header h1 .type, header h1 .parent {
+/* line 97, ../_sass/screen.scss */
+.header h1 .type, .header h1 .parent {
   color: #666;
 }
-/* line 100, ../_sass/screen.scss */
-header h2 {
+/* line 101, ../_sass/screen.scss */
+.header h2 {
   font-size: 12px;
   margin: 0;
   padding: 0;
   border: none;
   padding-bottom: 0;
 }
-/* line 107, ../_sass/screen.scss */
-header ul {
+/* line 108, ../_sass/screen.scss */
+.header ul {
   margin-top: 0.3em;
   margin-bottom: 0;
   font-size: 12px;
 }
-/* line 111, ../_sass/screen.scss */
-header ul li {
+/* line 112, ../_sass/screen.scss */
+.header ul li {
   list-style: none;
   margin-left: 0;
   margin-bottom: 0;
 }
 
-/* line 119, ../_sass/screen.scss */
+/* line 120, ../_sass/screen.scss */
 #wrapper {
   background: white url("/images/bg.png") repeat-y;
   min-height: 500px;
 }
 
-/* line 124, ../_sass/screen.scss */
+/* line 125, ../_sass/screen.scss */
 nav {
   float: left;
   width: 210px;
@@ -204,41 +205,46 @@ nav {
   overflow-x: hidden;
   font-size: 12px;
   line-height: 14px;
+  font-weight: bold;
 }
-
 /* line 133, ../_sass/screen.scss */
-#content {
-  margin-left: 250px;
-  padding: 0 40px 40px 10px;
+nav li {
+  padding: 0px 0px 7px 20px;
 }
 
 /* line 138, ../_sass/screen.scss */
+#content {
+  margin-left: 250px;
+  padding: 10px 40px 40px 10px;
+}
+
+/* line 143, ../_sass/screen.scss */
 .param {
   font-style: italic;
   margin: 0px;
 }
 
-/* line 143, ../_sass/screen.scss */
+/* line 148, ../_sass/screen.scss */
 .param-desc {
   padding-left: 20px;
 }
 
-/* line 147, ../_sass/screen.scss */
-footer {
+/* line 152, ../_sass/screen.scss */
+.footer {
   clear: both;
   height: 30px;
   background: #EDF3FE;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #485d77), color-stop(50%, #303c4f), color-stop(100%, #252d38));
   background-image: -moz-linear-gradient(top, #485d77 0%, #303c4f 50%, #252d38 100%);
 }
-/* line 152, ../_sass/screen.scss */
-footer p {
+/* line 157, ../_sass/screen.scss */
+.footer p {
   color: #CCC;
   padding: 6px 0px;
   text-align: center;
 }
 
-/* line 160, ../_sass/screen.scss */
+/* line 165, ../_sass/screen.scss */
 .clear {
   clear: both;
   width: 0;
