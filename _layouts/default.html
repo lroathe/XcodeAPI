@@ -15,6 +15,7 @@
 	</script>
 </head>
 <body>
+<div id="wrapper">
 	<header><hgroup>
 		<h1>{{ page.title }} <span class="parent">{{ page.parent }}</span><span class="type">{{ page.type }}</span></h1>
 		<h2>{{ page.breadcrumbs }}</h2>
@@ -23,15 +24,16 @@
 			{{ page.header_extras }}
 		</ul>
 	</hgroup></header>
-	<div id="wrapper">
+	
 		<nav>
 		</nav>
 		<div id="content">
 			{{ content }}
 		</div>
-	</div>
+
 	<footer>
 		<p>No Rights Reserved</p>
 	</footer>
+</div>
 </body>
 </html>
