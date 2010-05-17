@@ -11,7 +11,6 @@ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   background: #FFF;
   color: #000;
-  margin: 0px;
   font-size: 14px;
   line-height: 16px;
 }
@@ -26,7 +25,7 @@ h1 {
     font: normal normal normal 215%/normal 'Lucida Grande', Geneva, Helvetica, Arial, sans-serif;
     font-weight: normal;
     margin-bottom: 1.15em;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 h2 {
@@ -35,6 +34,7 @@ h2 {
     font-size: 187%;
     font-weight: normal;
     margin-top: 1.75em;
+    margin-bottom: 0.6em;
     padding-bottom: 2px;
 }
 
@@ -80,12 +80,13 @@ p {
 }
 
 /* Layouting */
-header {
+.header {
 	background: #EDF3FE;
 	@include linear-gradient(color-stops(#adbac6, #92a1b1, #7a8b9e));
 	border-bottom: 1px solid #ccc;
 	padding: 1em 2em 0.5em 2em;
 	h1 {
+	    @include text-shadow(rgb(213, 213, 213), 0px, 1px, 0);
 		font-size: 18px;
 		margin: 5px 0;
 		padding: 0;
@@ -127,12 +128,16 @@ nav {
 	padding: 20px 10px;
 	overflow-x: hidden;
 	font-size: 12px;
-  line-height: 14px;
+	line-height: 14px;
+	font-weight: bold;
+	li {
+	   padding: 0px 0px 7px 20px;
+	}
 }
 
 #content {
 	margin-left: 250px;
-	padding: 0 40px 40px 10px;
+	padding: 10px 40px 40px 10px;
 }
 
 .param {
@@ -144,7 +149,7 @@ nav {
     padding-left: 20px;
 }
 
-footer {
+.footer {
 	clear: both;
 	height: 30px;
 	background: #EDF3FE;

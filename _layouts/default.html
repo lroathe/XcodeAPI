@@ -15,25 +15,23 @@
 	</script>
 </head>
 <body>
-<div id="wrapper">
-	<header><hgroup>
+	<div class="header">
 		<h1>{{ page.title }} <span class="parent">{{ page.parent }}</span><span class="type">{{ page.type }}</span></h1>
 		<h2>{{ page.breadcrumbs }}</h2>
 		<ul class="files"> 
 			<li>{{ page.header_description }}</li> 
 			{{ page.header_extras }}
 		</ul>
-	</hgroup></header>
-	
+	</div>
+	<div id="wrapper">
 		<nav>
 		</nav>
 		<div id="content">
 			{{ content }}
 		</div>
-
-	<footer>
+	</div>
+	<div class="footer">
 		<p>No Rights Reserved</p>
-	</footer>
-</div>
+	</div>
 </body>
 </html>
