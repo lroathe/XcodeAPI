@@ -6,11 +6,13 @@ parent: XCSpecification
 ---
 # XCPlatformSpecification Class Reference
 
+*Inherits from* [XCSpecification](XCSpecification.html)
+
 *Framework* /Developer/Library/PrivateFrameworks/DevToolsCore.framework
 
 ## Overview
 
-Placeholder
+Platform specifications are created by the loading of the Info.plist from the platform bundles held in /Developer/Platforms. These objects are usually created automatically by Xcode during its launching phase. See the [platform specification](../../Specifications/PlatformSpecification.html) documentation for more information
 
 ## Tasks
 
@@ -22,27 +24,21 @@ Placeholder
 
 [+ platformForDomain:](#+platformForDomain:)
 
-## Class Methods
+[- initWithPath:](#-initWithPath:)
 
-<a name="+_propertyDictionaryForPlatformAtPath:"></a>
-###_propertyDictionaryForPlatformAtPath:
-    + _propertyDictionaryForPlatformAtPath:
+[- initWithPropertyListDictionary:path:inDomain:](#-initWithPropertyListDictionary:path:inDomain:)
+
+### Subclassing Methods
+
+[+ specificationType](#+specificationType)
+
+[+ specificationTypeBaseClass](#+specificationTypeBaseClass)
+
+## Class Methods
 
 <a name="+defaultPlatform"></a>
 ###defaultPlatform
-    + defaultPlatform
-
-<a name="+_mapPlatformName:toSpecificationOrProxy:isAlias:"></a>
-###_mapPlatformName:toSpecificationOrProxy:isAlias:
-    + _mapPlatformName:toSpecificationOrProxy:isAlias:
-
-<a name="+registerSpecificationOrProxy:"></a>
-###registerSpecificationOrProxy:
-    + registerSpecificationOrProxy:
-
-<a name="+_loadPlatformAtPath:andSpecificationsAndPlugins:"></a>
-###_loadPlatformAtPath:andSpecificationsAndPlugins:
-    + _loadPlatformAtPath:andSpecificationsAndPlugins:
+    + (XCPlatformSpecification *)defaultPlatform
 
 <a name="+loadAllPlatforms"></a>
 ###loadAllPlatforms
@@ -128,7 +124,7 @@ A platform loaded from the given path.
 
 <a name="+specificationTypeBaseClass"></a>
 ###specificationTypeBaseClass
-    + specificationTypeBaseClass
+    + (Class)specificationTypeBaseClass
 
 <a name="+specificationType"></a>
 ###specificationType
@@ -146,6 +142,22 @@ A platform loaded from the given path.
 ###specificationRegistryName
     + specificationRegistryName
 
+<a name="+_propertyDictionaryForPlatformAtPath:"></a>
+###_propertyDictionaryForPlatformAtPath:
+    + _propertyDictionaryForPlatformAtPath:
+
+<a name="+_mapPlatformName:toSpecificationOrProxy:isAlias:"></a>
+###_mapPlatformName:toSpecificationOrProxy:isAlias:
+    + _mapPlatformName:toSpecificationOrProxy:isAlias:
+
+<a name="+registerSpecificationOrProxy:"></a>
+###registerSpecificationOrProxy:
+    + registerSpecificationOrProxy:
+
+<a name="+_loadPlatformAtPath:andSpecificationsAndPlugins:"></a>
+###_loadPlatformAtPath:andSpecificationsAndPlugins:
+    + _loadPlatformAtPath:andSpecificationsAndPlugins:
+
 ## Instance Methods
 
 <a name="-initWithPropertyListDictionary:path:inDomain:"></a>
@@ -154,39 +166,31 @@ A platform loaded from the given path.
 
 <a name="-initWithPath:"></a>
 ###initWithPath:
-    - initWithPath:
-
-<a name="-dealloc"></a>
-###dealloc
-    - dealloc
-
-<a name="-_prependPlatformPathToSearchPathsIfNecessary:"></a>
-###_prependPlatformPathToSearchPathsIfNecessary:
-    - _prependPlatformPathToSearchPathsIfNecessary:
+    - (id)initWithPath:(NSString *)path
 
 <a name="-loadSpecificationsAndPlugins"></a>
 ###loadSpecificationsAndPlugins
-    - loadSpecificationsAndPlugins
+    - (void)loadSpecificationsAndPlugins
 
 <a name="-isPlatformFullyLoaded"></a>
 ###isPlatformFullyLoaded
-    - isPlatformFullyLoaded
+    - (BOOL)isPlatformFullyLoaded
 
 <a name="-name"></a>
 ###name
-    - name
+    - (NSString *)name
 
 <a name="-alternateNames"></a>
 ###alternateNames
-    - alternateNames
+    - (NSArray *)alternateNames
 
 <a name="-directoryName"></a>
 ###directoryName
-    - directoryName
+    - (NSString *)directoryName
 
 <a name="-path"></a>
 ###path
-    - path
+    - (NSString *)path
 
 <a name="-platformDomain"></a>
 ###platformDomain
@@ -194,55 +198,67 @@ A platform loaded from the given path.
 
 <a name="-familyName"></a>
 ###familyName
-    - familyName
+    - (NSString *)familyName
 
 <a name="-familyIdentifier"></a>
 ###familyIdentifier
-    - familyIdentifier
+    - (NSString *)familyIdentifier
 
 <a name="-iconPath"></a>
 ###iconPath
-    - iconPath
+    - (NSString *)iconPath
 
 <a name="-userDescription"></a>
 ###userDescription
-    - userDescription
+    - (NSString *)userDescription
 
 <a name="-developerPaths"></a>
 ###developerPaths
-    - developerPaths
+    - (DTDeveloperPaths *)developerPaths
 
 <a name="-pluginDeveloperPaths"></a>
 ###pluginDeveloperPaths
-    - pluginDeveloperPaths
-
-<a name="-_computedProperties:"></a>
-###_computedProperties:
-    - _computedProperties:
+    - (DTDeveloperPaths *)pluginDeveloperPaths
 
 <a name="-defaultProperties"></a>
 ###defaultProperties
-    - defaultProperties
+    - (PBXBuildSettingsDictionary *)defaultProperties
 
 <a name="-overrideProperties"></a>
 ###overrideProperties
-    - overrideProperties
+    - (PBXBuildSettingsDictionary *)overrideProperties
 
 <a name="-deviceProperties"></a>
 ###deviceProperties
-    - deviceProperties
+    - (NSDictionary *)deviceProperties
 
 <a name="-SDKs"></a>
 ###SDKs
-    - SDKs
+
+Array of SDKs associated with the platform
+
+    - (NSArray *)SDKs
+    
+####Return Value
+Array of XCSDKPackage objects representing the contents of the platform bundle subpath of Developer/SDKs.
 
 <a name="-addSDK:"></a>
 ###addSDK:
-    - addSDK:
+
+Add an associated SDK to the platform.
+
+    - (void)addSDK:(XCSDKPackage *)sdk
+    
+####Parameters
+<p class="param">sdk</p>
+<p class="param-desc">A sdk to attach to the platform.</p>
+
+####Discussion
+When the platform is loaded all SDKs are already loaded with the platform by default. This method should be used for loading of SDKs outsite of the platform packaging.
 
 <a name="-defaultSDK"></a>
 ###defaultSDK
-    - defaultSDK
+    - (XCSDKPackage *)defaultSDK
 
 <a name="-projectTemplateSearchPaths"></a>
 ###projectTemplateSearchPaths
@@ -262,35 +278,30 @@ A platform loaded from the given path.
 
 <a name="-debuggerSettings"></a>
 ###debuggerSettings
-    - debuggerSettings
-
-<a name="-_debuggerSettingForKey:"></a>
-###_debuggerSettingForKey:
-    - _debuggerSettingForKey:
-
-<a name="-_debuggerSettingIsEnabledForKey:"></a>
-###_debuggerSettingIsEnabledForKey:
-    - _debuggerSettingIsEnabledForKey:
+    - (NSDictionary *)debuggerSettings
 
 <a name="-deviceIsRequiredForLaunch"></a>
 ###deviceIsRequiredForLaunch
-    - deviceIsRequiredForLaunch
+
+Setting flag to require a connected device for launching executables (ala iPhoneOS)
+
+    - (BOOL)deviceIsRequiredForLaunch
 
 <a name="-runInDebugger"></a>
 ###runInDebugger
-    - runInDebugger
+    - (BOOL)runInDebugger
 
 <a name="-debuggerCanRestart"></a>
 ###debuggerCanRestart
-    - debuggerCanRestart
+    - (BOOL)debuggerCanRestart
 
 <a name="-debuggerCanUseGuardMalloc"></a>
 ###debuggerCanUseGuardMalloc
-    - debuggerCanUseGuardMalloc
+    - (BOOL)debuggerCanUseGuardMalloc
 
 <a name="-providesAttachList"></a>
 ###providesAttachList
-    - providesAttachList
+    - (BOOL)providesAttachList
 
 <a name="-dataformattersLocationPath"></a>
 ###dataformattersLocationPath
@@ -299,4 +310,20 @@ A platform loaded from the given path.
 <a name="-dataformattersBundleStyle"></a>
 ###dataformattersBundleStyle
     - dataformattersBundleStyle
+    
+<a name="-_prependPlatformPathToSearchPathsIfNecessary:"></a>
+###_prependPlatformPathToSearchPathsIfNecessary:
+    - _prependPlatformPathToSearchPathsIfNecessary:
+
+<a name="-_computedProperties:"></a>
+###_computedProperties:
+    - _computedProperties:
+
+<a name="-_debuggerSettingForKey:"></a>
+###_debuggerSettingForKey:
+    - _debuggerSettingForKey:
+
+<a name="-_debuggerSettingIsEnabledForKey:"></a>
+###_debuggerSettingIsEnabledForKey:
+    - _debuggerSettingIsEnabledForKey:
 
