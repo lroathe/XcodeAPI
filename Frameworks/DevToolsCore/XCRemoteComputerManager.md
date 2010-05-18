@@ -6,6 +6,8 @@ parent: NSObject
 ---
 # XCRemoteComputerManager Class Reference
 
+*Inherits from* NSObject
+
 *Framework* /Developer/Library/PrivateFrameworks/DevToolsCore.framework
 
 ## Overview
@@ -50,7 +52,17 @@ Placeholder
 
 <a name="+remoteComputerClassForPlatform:"></a>
 ###remoteComputerClassForPlatform:
-    + remoteComputerClassForPlatform:
+
+[XCRemoteComputer](XCRemoteComputer.html) sub-class for a given platform
+
+    + (Class)remoteComputerClassForPlatform:(XCPlatformSpecification *)platform
+
+####Parameters
+<p class="param">platform</p>
+<p class="param-desc">A platform specification to query against.</p>
+
+####Discussion
+When remote computers (ala iPhoneOS device) targets are used for executable targets of projects, this allows for the platform to be associated with a given remote computer class.
 
 ## Instance Methods
 
@@ -84,7 +96,17 @@ Placeholder
 
 <a name="-remoteComputerWithDeviceIdentifier:"></a>
 ###remoteComputerWithDeviceIdentifier:
-    - remoteComputerWithDeviceIdentifier:
+
+Create a remote computer object by a device identifier.
+
+    - (XCRemoteComputer *)remoteComputerWithDeviceIdentifier:(NSString *)identifier
+    
+####Parameters    
+<p class="param">identifier</p>
+<p class="param-desc">An identifier for a remote device.</p>
+
+####Discussion
+This method is intended for creating a connection to a given device.
 
 <a name="-deviceConnected:"></a>
 ###deviceConnected:

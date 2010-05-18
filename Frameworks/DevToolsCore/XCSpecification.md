@@ -6,11 +6,13 @@ parent: NSObject
 ---
 # XCSpecification Class Reference
 
+*Inherits from* NSObject
+
 *Framework* /Developer/Library/PrivateFrameworks/DevToolsCore.framework
 
 ## Overview
 
-Placeholder
+The XCSpecification class is the root for all specifications. 
 
 ## Tasks
 
@@ -18,7 +20,7 @@ Placeholder
 
 <a name="+specificationTypeBaseClass"></a>
 ###specificationTypeBaseClass
-    + specificationTypeBaseClass
+    + (Class)specificationTypeBaseClass
 
 <a name="+specificationType"></a>
 ###specificationType
